@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CreateTab from "./Components/CreateTab";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ReadTab from "./Components/ReadTab";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Router>
+        <Routes>
+          <Route path="/:index?" element={ <CreateTab></CreateTab>}>  </Route>
+          <Route path="/read" element={<ReadTab></ReadTab>}></Route>
+        </Routes>
+    </Router>
     </div>
   );
 }
