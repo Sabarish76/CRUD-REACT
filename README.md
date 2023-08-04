@@ -1,3 +1,7 @@
+Registration Form:https://vwpdwt-3000.csb.app/
+Read:https://vwpdwt-3000.csb.app/read
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
